@@ -67,9 +67,6 @@ Upon running the script, you will be presented with a menu to choose between enc
 3. Enter the decryption password when prompted.
 4. The decrypted file will be saved with a prefix `decrypted_`.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
