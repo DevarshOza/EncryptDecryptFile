@@ -1,43 +1,77 @@
-Description
-Your script, en_dc_file.sh, provides a command-line interface for encrypting and decrypting files using OpenSSL. It allows users to:
+# Encrypt and Decrypt Files
 
-Encrypt a file with a password using AES-256-CBC encryption.
-Decrypt a file with a password using AES-256-CBC decryption.
-Choose files from the current directory and specify output filenames for encrypted or decrypted files.
-Display messages with color-coded feedback on the status of encryption and decryption operations.
-Dependency Installation and Running Instructions
-Update package lists (for Debian-based systems like Ubuntu):
+This repository contains a bash script that allows you to easily encrypt and decrypt files using OpenSSL. The script uses `figlet` and `lolcat` for enhanced visual output.
 
-bash
-Copy code
-sudo apt-get update
+## Prerequisites
 
-Install dependencies:
+Ensure you have the following tools installed on your system:
+- `figlet` for ASCII art text display
+- `lolcat` for colorizing text output
+- `openssl` for file encryption and decryption
 
-bash
-Copy code
-# Install figlet for ASCII text display
-sudo apt-get install figlet
+## Installation
 
-# Install lolcat for colorizing text
-sudo apt-get install lolcat
+Follow these steps to install the necessary tools, clone the repository, and run the script:
 
-# Install openssl for encryption/decryption operations
-sudo apt-get install openssl
-Clone the Git repository:
+1. **Update package lists**:
 
-bash
-Copy code
-git clone https://github.com/DevarshOza/EncryptDecryptFile.git
-cd EncryptDecryptFile
-Make the script executable:
+    ```bash
+    sudo apt-get update
+    ```
 
-bash
-Copy code
-chmod +x en_dc_file.sh
-Run the script:
+2. **Install dependencies**:
 
-bash
-Copy code
-./en_dc_file.sh
-These commands will install the necessary tools, clone the repository containing your script, make the script executable, and then run it. Make sure to follow these steps on a Unix-like system (e.g., Linux or macOS). If you're using a different operating system or package manager, you might need to adjust the installation commands accordingly.
+    ```bash
+    sudo apt-get install -y figlet lolcat openssl
+    ```
+
+3. **Clone the Git repository**:
+
+    ```bash
+    git clone https://github.com/DevarshOza/EncryptDecryptFile.git
+    ```
+
+4. **Navigate into the repository directory**:
+
+    ```bash
+    cd EncryptDecryptFile
+    ```
+
+5. **Make the script executable**:
+
+    ```bash
+    chmod +x en_dc_file.sh
+    ```
+
+6. **Run the script**:
+
+    ```bash
+    ./en_dc_file.sh
+    ```
+
+## Usage
+
+Upon running the script, you will be presented with a menu to choose between encrypting or decrypting a file. Follow the on-screen prompts to select a file and enter the necessary passwords for encryption or decryption.
+
+### Encrypting a File
+
+1. Choose the option to encrypt a file.
+2. Select a file from the current directory.
+3. Enter an encryption password when prompted.
+4. The encrypted file will be saved with a prefix `encrypted_`.
+
+### Decrypting a File
+
+1. Choose the option to decrypt a file.
+2. Select a file from the current directory (must be an encrypted file).
+3. Enter the decryption password when prompted.
+4. The decrypted file will be saved with a prefix `decrypted_`.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Feel free to submit issues, suggest features, or contribute code. Please follow me if you wish to contribute.
+
